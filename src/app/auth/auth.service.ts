@@ -144,6 +144,10 @@ export class AuthService {
           errorMessage =
             "The user account has been disabled by an administrator.";
           break;
+        case "TOO_MANY_ATTEMPTS_TRY_LATER":
+          errorMessage =
+            "We have blocked all requests from this device due to unusual activity. Try again later.";
+          break;
       }
     }
     return throwError(errorMessage);
