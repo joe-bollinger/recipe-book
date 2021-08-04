@@ -1,8 +1,7 @@
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { catchError } from "rxjs/operators";
+import { catchError ,  tap } from "rxjs/operators";
 import { BehaviorSubject, throwError } from "rxjs";
-import { tap } from "rxjs/operators";
 import { Router } from "@angular/router";
 import { environment } from "../../environments/environment";
 

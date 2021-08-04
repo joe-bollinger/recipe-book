@@ -5,13 +5,12 @@ import {
   ViewChild,
 } from "@angular/core";
 import { NgForm } from "@angular/forms";
-import { Observable } from "rxjs";
+import { Observable ,  Subscription } from "rxjs";
 import { Router } from "@angular/router";
 
 import { AuthResponseData, AuthService } from "./auth.service";
 import { AlertComponent } from "../shared/alert/alert.component";
 import { PlaceholderDirective } from "../shared/placeholder/placeholder.directive";
-import { Subscription } from "rxjs";
 
 @Component({
   selector: "app-auth",
